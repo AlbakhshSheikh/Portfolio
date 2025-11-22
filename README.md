@@ -34,41 +34,29 @@ Built with **React** and styled using **Tailwind CSS**, it features a premium da
 
 Here is the visual flow of the user experience through the portfolio:
 
-```mermaid
-graph TD
-    A[Visitor Lands on Website] --> B{Navbar Navigation}
-    B -->|Home| C[🏠 Home Section]
-    B -->|About| D[👤 About Section]
-    B -->|Skills| E[💻 Skills Section]
-    B -->|Qualifications| F[🎓 Qualifications Section]
-    B -->|Projects| G[🚀 Projects Section]
-    B -->|Certifications| H[🏆 Achievements Section]
-    B -->|Contact| I[📞 Contact Section]
-    B -->|Resume| J[📄 View Resume (New Tab)]
-    
-    C -->|Scroll Down| D
-    D -->|Scroll Down| E
-    E -->|Scroll Down| F
-    F -->|Scroll Down| G
-    G -->|Scroll Down| H
-    H -->|Scroll Down| I
-    
-    I --> K[End of Page / Footer]
-    K -->|Made with ❤️| L[Albakhsh Sheikh]
-```
+        Home[🏠 Home]
+        About[👤 About]
+        Skills[💻 Skills]
+        Qualifications[🎓 Qualifications]
+        Projects[🚀 Projects]
+        Achievements[🏆 Achievements]
+        Contact[📞 Contact]
+        Navbar --> Resume[📄 View Resume (New Tab)]
+        Contact --> End(End of Page / Footer)
+        End --> Footer[Made with ❤️ by Albakhsh Sheikh]
 
-## 🚀 Getting Started
+<!-- ## 🚀 Getting Started
 
 To run this project locally on your machine:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/AlbakhshSheikh/Portfolio.git
     ```
 
 2.  **Navigate to the project directory:**
     ```bash
-    cd my-react-app
+    cd Portfolio
     ```
 
 3.  **Install dependencies:**
@@ -84,7 +72,7 @@ To run this project locally on your machine:
 5.  **Open your browser:**
     Visit `http://localhost:5173` to see the app in action!
 
----
+--- -->
 
 <div align="center">
   Made with ❤️ by <strong>Albakhsh Sheikh</strong>
