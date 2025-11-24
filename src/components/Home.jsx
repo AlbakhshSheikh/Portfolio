@@ -17,7 +17,7 @@ const Home = () => {
                     className="flex flex-col justify-center h-full"
                 >
                     <h2 className="text-4xl sm:text-7xl font-bold text-white">
-                        I'm <span className="text-gradient">Albakhsh Sheikh</span>
+                        I'm Albakhsh Sheikh
                     </h2>
                     <h3 className="text-2xl sm:text-4xl font-bold text-gray-300 mt-2">
                         Software Engineer Trainee
@@ -29,17 +29,17 @@ const Home = () => {
                     </p>
 
                     <div>
-                        <Link
-                            to="about"
-                            smooth
-                            duration={500}
+                        <a
+                            href="https://drive.google.com/file/d/1luua2JTjorQVCZcvAEvF_54a2M67nDTB/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:scale-105 duration-300 shadow-lg shadow-cyan-500/50"
                         >
-                            Portfolio
+                            Resume
                             <span className="group-hover:rotate-90 duration-300">
                                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
                             </span>
-                        </Link>
+                        </a>
                     </div>
                 </motion.div>
             </div>
