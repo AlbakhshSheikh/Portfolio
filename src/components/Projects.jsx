@@ -1,20 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import img1 from './school.jpg'
+import img2 from './erp.jpg'
+import img3 from './hotel.jpg'
 const Projects = () => {
     const projects = [
         {
             id: 1,
-            src: 'https://via.placeholder.com/300', // Replace with actual project images
+            src: img1, // use the imported local image
             title: 'School Management System',
             tech: 'React.js, JavaScript, GitLab CI/CD, REST API',
             desc: 'Scalable web app with 20+ modules for Fee, Timetable, Attendance. Optimized load time by 30%.',
             demo: 'https://stpl.cloud/login',
             code: '#',
         },
+
         {
             id: 2,
-            src: 'https://via.placeholder.com/300',
+            src: img2,
+            title: 'ERP System for Manufacturing',
+            tech: 'React.js, REST API, Axios, Formik, Yup',
+            desc: 'ERP system with 30+ modules for HR, Inventory. Role-based access control for multiple companies.',
+            demo: 'https://industrynext.in/login',
+            code: '#',
+        },
+        {
+            id: 3,
+            src: img1,
             title: 'Bansal Academy Management',
             tech: 'React.js, JavaScript, GitLab CI/CD, REST API',
             desc: 'Web app with 10+ modules for Admission, Test Schedule. Responsive dashboard with interconnected menus.',
@@ -22,12 +34,12 @@ const Projects = () => {
             code: '#',
         },
         {
-            id: 3,
-            src: 'https://via.placeholder.com/300',
-            title: 'ERP System for Manufacturing',
+            id: 4,
+            src: img3,
+            title: 'Hotel Management System',
             tech: 'React.js, REST API, Axios, Formik, Yup',
-            desc: 'ERP system with 30+ modules for HR, Inventory. Role-based access control for multiple companies.',
-            demo: 'https://industrynext.in/login',
+            desc: 'Hotel booking and management system with room inventory, reservations, and billing.',
+            demo: 'https://foodnext.in/login',
             code: '#',
         },
     ];
@@ -50,7 +62,7 @@ const Projects = () => {
                     <p className="py-6">Check out some of my work right here</p>
                 </motion.div>
 
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-12 sm:px-0">
                     {projects.map(({ id, src, title, tech, desc, demo, code }) => (
                         <motion.div
                             key={id}
@@ -70,12 +82,22 @@ const Projects = () => {
                                 <p className="text-sm text-accent mb-2">{tech}</p>
                                 <p className="text-gray-300 text-sm mb-4 flex-grow">{desc}</p>
                                 <div className="flex items-center justify-center w-full mt-auto">
-                                    <button className="w-1/2 px-6 py-3 m-2 duration-200 hover:scale-105 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md">
+                                    <a
+                                        href={demo}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-1/2 px-6 py-3 m-2 duration-200 hover:scale-105 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md text-center"
+                                    >
                                         Demo
-                                    </button>
-                                    <button className="w-1/2 px-6 py-3 m-2 duration-200 hover:scale-105 border border-gray-500 rounded-md hover:bg-gray-800">
+                                    </a>
+                                    <a
+                                        href={code}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-1/2 px-6 py-3 m-2 duration-200 hover:scale-105 border border-gray-500 rounded-md hover:bg-gray-800 text-center"
+                                    >
                                         Code
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </motion.div>
